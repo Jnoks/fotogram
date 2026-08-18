@@ -48,3 +48,19 @@ const IMAGES = [
     alt: "Dense star field with the Milky Way band",
   },
 ];
+
+function generatePhotoAlbum() {
+  let html = "";
+  for (let i = 0; i < IMAGES.length; i++) {
+    html += getPhotoTemplate(IMAGES[i]);
+  }
+  document.getElementById("photo-album").innerHTML = html;
+}
+
+function getPhotoTemplate(image) {
+  return /*html*/ `
+    <img class="thumbnail" src="${image.src}" alt="${image.alt}">
+  `;
+}
+
+generatePhotoAlbum();

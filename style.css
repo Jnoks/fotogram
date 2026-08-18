@@ -6,9 +6,39 @@ body {
 
 header,
 footer {
+  height: 80px;
+  padding: 20px 140px;
   background-color: var(--color-header-footer);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 140px;
+  gap: 80px;
+
 }
 
 h1 {
   font-family: "Figtree";
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.photo-album {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
