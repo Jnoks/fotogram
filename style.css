@@ -7,7 +7,7 @@ body {
   flex-direction: column;
 }
 
-header {
+body > header {
   height: 80px;
   padding: 20px 140px;
   background-color: var(--color-header-footer);
@@ -16,7 +16,7 @@ header {
   align-items: center;
 }
 
-footer {
+body > footer {
   background-image: url("./assets/img/footer.png");
   background-position: center;
   background-size: cover;
@@ -32,8 +32,7 @@ footer {
   font-family: "Figtree";
   font-weight: 400;
   font-size: 14px;
-  color:rgba(153, 172, 179, 1);
-;
+  color: rgba(153, 172, 179, 1);
 }
 
 main {
@@ -44,7 +43,6 @@ main {
   padding: 160px 140px;
   gap: 80px;
   flex-grow: 1;
-
 }
 
 h1 {

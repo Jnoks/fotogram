@@ -13,15 +13,47 @@
   </head>
   <body>
     <header>
-      <img src="./assets/icons/logo.svg" alt="fotogram-logo">
-      <img src="./assets/icons/fotogram.svg" alt="Fotogram">
+      <img src="./assets/icons/logo.svg" alt="fotogram-logo" />
+      <img src="./assets/icons/fotogram.svg" alt="Fotogram" />
     </header>
     <main>
       <h1>Your personal photo album</h1>
       <div class="photo-album" id="photo-album"></div>
     </main>
+    <dialog id="image-dialog">
+      <header class="dialog-header">
+        <h2 id="dialog-title"></h2>
+        <button
+          class="dialog-close"
+          onclick="closeDialog()"
+          aria-label="Close dialog"
+        >
+          <img src="./assets/icons/close.svg" alt="" />
+        </button>
+      </header>
+
+      <img id="dialog-image" src="" alt="" />
+
+      <footer class="dialog-footer">
+        <button
+          class="dialog-button"
+          onclick="showPreviousImage()"
+          aria-label="Previous image"
+        >
+          <img src="./assets/icons/arrow-left.svg" alt="" />
+        </button>
+        <p id="image-counter"></p>
+        <button
+          class="dialog-button"
+          onclick="showNextImage()"
+          aria-label="Next image"
+        >
+          <img src="./assets/icons/arrow-right.svg" alt="" />
+        </button>
+      </footer>
+    </dialog>
     <footer>
-      <img src="./assets/icons/da-logo.svg" alt="Developer Akademie">
+      <img src="./assets/icons/da-logo.svg" alt="Developer Akademie" />
       <p class="footer">© 2023 Developer Akademie GmbH</p>
     </footer>
   </body>

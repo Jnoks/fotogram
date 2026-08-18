@@ -63,4 +63,20 @@ function getPhotoTemplate(image) {
   `;
 }
 
+function openDialog() {
+
+}
+
+function closeDialog() {
+  
+}
+
+function showNextImage() {
+  
+}
+
+function showPreviousImage() {
+  
+}
+
 generatePhotoAlbum();
