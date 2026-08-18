@@ -1,0 +1,14 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: 16px;
+}
+
+header,
+footer {
+  background-color: var(--color-header-footer);
+}
+
+h1 {
+  font-family: "Figtree";
+}
