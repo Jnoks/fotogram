@@ -1,7 +1,7 @@
 const IMAGES = [
   {
     src: "./assets/img/lagoon-nebula.jpg",
-    alt: "Pink glowing Lagoon Nebula surrounded by countless stars",
+    alt: "Pink glowing Lagoon Nebula",
   },
   {
     src: "./assets/img/rosette-nebula.jpg",
@@ -9,7 +9,7 @@ const IMAGES = [
   },
   {
     src: "./assets/img/space-nebula.jpg",
-    alt: "Colorful nebula with glowing gas clouds",
+    alt: "Colorful nebula glowing gas clouds",
   },
   {
     src: "./assets/img/galaxy.jpg",
@@ -17,15 +17,15 @@ const IMAGES = [
   },
   {
     src: "./assets/img/universe-colors.jpg",
-    alt: "Colorful universe with stars and cosmic clouds",
+    alt: "Colorful universe with stars",
   },
   {
     src: "./assets/img/universe-stars.jpg",
-    alt: "Star field with glowing cosmic dust",
+    alt: "Star field with cosmic dust",
   },
   {
     src: "./assets/img/deep-space.jpg",
-    alt: "Deep space with countless distant stars",
+    alt: "Deep space with distant stars",
   },
   {
     src: "./assets/img/astronomy.jpg",
@@ -33,19 +33,19 @@ const IMAGES = [
   },
   {
     src: "./assets/img/constellations.jpg",
-    alt: "Starry sky with visible constellations",
+    alt: "Starry sky with constellations",
   },
   {
     src: "./assets/img/milky-way.jpg",
-    alt: "Milky Way band across the night sky",
+    alt: "Milky Way band across night sky",
   },
   {
     src: "./assets/img/milky-way-mountains.jpg",
-    alt: "Milky Way above a dark mountain range",
+    alt: "Milky Way above a dark mountain",
   },
   {
     src: "./assets/img/starfield-milky-way.jpg",
-    alt: "Dense star field with the Milky Way band",
+    alt: "Dense star field Milky Way band",
   },
 ];
 
