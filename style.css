@@ -67,7 +67,7 @@ h1 {
 }
 
 .thumbnail:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5)
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
 dialog[open] {
@@ -128,4 +128,59 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
   color: rgba(245, 245, 245, 1);
+}
+
+@media (max-width: 480px) {
+  body > header {
+    padding: 10px 40px;
+  }
+
+  main {
+    padding: 80px 40px;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  .thumbnail {
+    width: 116px;
+    height: 116px;
+  }
+
+  .photo-album {
+    gap: 8px
+  }
+
+  dialog[open] {
+  width: 340px;
+  height: 660px;
+  padding: 18px 12px;
+  gap: 16px;
+}
+
+.dialog-image {
+  width: 260px;
+  height: 375px;
+  object-fit: cover;
+}
+
+.dialog-header {
+  flex-direction: column-reverse;
+}
+
+.dialog-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
 }
