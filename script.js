@@ -81,6 +81,10 @@ function updateDialog() {
 }
 
 function closeDialog() {
+  document.getElementById("dialog-image").src = ""
+  document.getElementById("dialog-image").alt = ""
+  document.getElementById("dialog-title").innerHTML = ""
+  document.getElementById("image-counter").innerHTML = ""
   document.getElementById("image-dialog").close();
 }
 
