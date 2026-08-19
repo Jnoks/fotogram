@@ -76,11 +76,15 @@ dialog[open] {
   width: 690px;
   border-radius: 40px;
   background-color: var(--color-header-footer);
-  padding: 48px 56px;
-  gap: 56px;
+  display: flex;
+  border: none;
+}
+
+.dialog-content {
   display: flex;
   flex-direction: column;
-  border: none;
+  padding: 48px 56px;
+  gap: 56px;
 }
 
 .dialog-header {
@@ -130,6 +134,10 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
   color: rgba(245, 245, 245, 1);
+}
+
+dialog::backdrop {
+  background-color: #d1eef169;
 }
 
 @media (max-width: 480px) {
@@ -193,32 +201,29 @@ button:hover {
     padding: 100px 80px;
   }
 
-h1 {
-  font-size: 26px;
-}
+  h1 {
+    font-size: 26px;
+  }
 
- body > header {
+  body > header {
     padding: 20px 80px;
     justify-content: center;
   }
-
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
-
   h1 {
     font-size: 38px;
   }
-
 }
 
 @media (min-width: 1280px) {
   main {
     width: min(100% - 2rem, 1440px);
     margin-inline: auto;
-}
+  }
 
- body > header {
-padding: 64px max(calc(50% - 720px), 64px);
-}
+  body > header {
+    padding: 64px max(calc(50% - 720px), 64px);
+  }
 }
