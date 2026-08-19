@@ -64,6 +64,7 @@ h1 {
   object-fit: cover;
   border-radius: 16px;
   border: 2px solid rgba(18, 70, 88, 1);
+  cursor: pointer;
 }
 
 .thumbnail:hover {
@@ -171,7 +172,7 @@ dialog::backdrop {
     padding: 18px 12px;
     gap: 24px;
   }
-  
+
   .dialog-image {
     width: 100%;
     height: 375px;
