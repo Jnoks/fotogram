@@ -50,6 +50,7 @@ const IMAGES = [
 ];
 
 let currentImageIndex = 0;
+let dialogImage = document.getElementById("dialog-image");
 
 function generatePhotoAlbum() {
   let html = "";
@@ -73,16 +74,16 @@ function openDialog(index) {
 
 function updateDialog() {
   const img = IMAGES[currentImageIndex];
-  document.getElementById("dialog-image").src = img.src;
-  document.getElementById("dialog-image").alt = img.alt;
+  dialogImage.src = img.src;
+  dialogImage.alt = img.alt;
   document.getElementById("dialog-title").innerHTML = img.alt;
   document.getElementById("image-counter").innerHTML =
     currentImageIndex + 1 + "/" + IMAGES.length;
 }
 
 function closeDialog() {
-  document.getElementById("dialog-image").src = "";
-  document.getElementById("dialog-image").alt = "";
+  dialogImage.src = "";
+  dialogImage.alt = "";
   document.getElementById("dialog-title").innerHTML = "";
   document.getElementById("image-counter").innerHTML = "";
   document.getElementById("image-dialog").close();
